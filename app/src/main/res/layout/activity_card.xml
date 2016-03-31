@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include
+        android:id="@+id/activity_card_toolbar"
+        layout="@layout/toolbar" />
+
+        <ImageView
+            android:id="@+id/activity_card_imv_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/activity_card_toolbar"
+            android:src="@drawable/card" />
+
+        <TextView
+            android:id="@+id/activity_card_tv_congratulation"
+            style="@style/CongratulationTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_alignTop="@+id/activity_card_imv_card"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/congratulationText" />
+
+
+        <TextView
+            android:id="@+id/activity_card_tv_from"
+            style="@style/FromTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:gravity="right"
+            android:text="@string/fromText" />
+
+    </RelativeLayout>
